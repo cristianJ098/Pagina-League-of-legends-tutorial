@@ -1,0 +1,270 @@
+@charset "UTF-8";
+.claseDiv {
+  color: tomato;
+}
+
+/* tipos de letras*/
+@font-face {
+  font-family: fuenteTitulo;
+  src: url(../font/Gorehand.otf);
+}
+
+@font-face {
+  font-family: fuenteSecundaria;
+  src: url(../font/Nuvel.ttf);
+}
+
+/* cabecera de la pagina*/
+body {
+  background-image: url("../images/background.jpg");
+  margin: 30px;
+  padding: 30px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #120314;
+  border-radius: 60px;
+}
+
+.logo {
+  width: 200px;
+  padding: 30px;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  padding: 40px;
+  margin: 3px;
+  text-align: center;
+  color: #cfa80a;
+  font-size: 400%;
+  font-family: fuenteTitulo, fuenteSecundaria;
+  text-transform: uppercase;
+}
+
+hr {
+  color: white;
+}
+
+/*Página de league of legends*/
+#cine {
+  text-align: right;
+  padding: 40px;
+  border-color: #4A4A4D 10px;
+  border-radius: 15px;
+  background: #120314;
+}
+
+#enlaceLol {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#enlaceLol a {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+
+#enlaceLol img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#enlaceLol a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 105%;
+}
+
+#enlaceLol img:hover {
+  width: 220px;
+}
+
+/*menú de navegación*/
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 15px;
+  background-color: #FCB904;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  padding-left: 80px;
+}
+
+#menu li {
+  list-style: none;
+  margin: 30px 30px;
+  padding: 10px;
+}
+
+#menu li a {
+  font-size: 230%;
+  font-family: fuenteSecundaria;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#menu li a:hover {
+  color: #75600E;
+  font-size: 270%;
+  text-decoration: underline;
+}
+
+/*contenido*/
+.contenido {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.contenido p {
+  font-family: 'roboto', sans-serif;
+  font-size: 150%;
+}
+
+/*Cinematicas*/
+iframe {
+  padding: 10px;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #2b1b30;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+
+.videos iframe {
+  border-radius: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.videos iframe:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+/*Campeones tabla*/
+.tabla {
+  background-color: #ffffff;
+  width: 50%;
+  margin: 100px auto;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-size: large;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #115c6e;
+  font: bold;
+  color: white;
+  border-bottom: #06262e solid 3px;
+}
+
+table th, table td {
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #aee9fd;
+}
+
+tr:hover {
+  background-color: #297c97;
+}
+
+.footer {
+  text-align: center;
+  margin: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(to bottom, black, white);
+  height: 100px;
+}
+
+/* sección mpas*/
+.mapas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template: 1fr 1fr 1fr / 1fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.mapas .item1 {
+  border: white solid 5px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.mapas .item2 {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  background-color: #120314;
+  border: white solid 5px;
+  border-radius: 15px;
+  font-size: 200%;
+}
+
+.mapas .item1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.mapas h2 {
+  padding: 40px;
+  margin: 3px;
+  text-align: center;
+  color: #cfa80a;
+  font-family: fuenteSecundaria;
+}
+
+.mapas p {
+  padding: 15px;
+  color: white;
+  font-family: 'roboto', sans-serif;
+}
+/*# sourceMappingURL=estilos.css.map */

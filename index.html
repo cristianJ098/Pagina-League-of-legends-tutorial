@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+		Info League of Legends
+
+	</title>
+
+	<!-- FontAwesome -->
+	
+	<!-- Css Style -->
+	<link rel="stylesheet" type="text/css" href="css/hojaEstilos2.css">
+
+	<!-- Font Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<style>
+
+		.images{
+			width: 60%;
+			margin: 20px auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.images a{
+			padding: 10px;
+			text-align: center;
+			font-size: 200%;
+			color: thistle;
+		}
+		.images a img{
+			padding: 0px;
+			border: 7px solid white;
+		}
+
+		.images a:hover{
+			transform: rotate(5deg);
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- Menu -->
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<a class="navbar-brand" href="index.html"><img src="images/logo.png" width="60px" class="rounded"  /></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="campeones.html">Campeones</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="Cinematicas.html">Cinemáticas</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link " href="mapas.html">Mapas</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="contacto.html">Contacto</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	  
+	<div class="cabeza">
+		<div class="titulo">
+			League of Legends
+		</div>
+		<div >
+			<a href="https://lan.leagueoflegends.com/es-mx/" target="_blank" ><img src="images/lol.png" width="150px" class="enlaceLol" > <br>Ir a Página Oficial</a>
+		</div>
+	</div>
+
+	<div class="sub">Tutorial</div>
+	<form class="form-inline">
+		<div class="form-group mb-2">
+		  <label for="staticEmail2" class="sr-only">Danos tu nombre!!</label>
+		  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="">
+		</div>
+		<div class="form-group mx-sm-3 mb-2">
+		  
+		  <input type="text" class="form-control" id="nombreVisitante" placeholder="Nombre">
+		</div>
+		<button type="submit" id="identificate" class="btn btn-primary mb-2">Identificate</button>
+		
+			<p id="texto" >Bienvenido...</p> 
+
+			
+		
+			  <script type="text/javascript">
+				  document.getElementById("identificate").onclick=function()
+				  {
+					  var entradaTexto="";
+					  entradaTexto = document.getElementById("nombreVisitante").value;
+					  document.getElementsById("texto").innerHTML="Bienvenido" + texto2;
+				  }
+			  </script>
+		
+			
+	  </form>
+	
+
+	<hr size="10px" color="white">
+	<div class="contenido">
+		
+		<p> En esta página podrás encontrar la información 
+			más relevante acerca del juego <strong>League Of Legends</strong>,
+			 el cual es un juego en linea muy popular, incluso esta incluido en 
+			 los Esport, que es una competencia internacional de diferentes 
+			 tipos de juegos, algo asi como una competencia de algún deporte 
+			 pero de video juegos.
+			Acontinuación podemos ver algunos de los personajes del juego o tambien
+			llamados <strong>Campeones</strong>:</p>
+		<p></p>
+
+	</div>
+	<hr size="10px" color="white">
+	<div class="images">
+		
+		
+		<a href="https://lan.leagueoflegends.com/es-mx/champions/kennen/" target="_blank"><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg" height="150px"> <br>kennen</a>
+		
+		<a href="https://lan.leagueoflegends.com/es-mx/champions/ziggs/" target="_blank"><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg" height="150px"><br>Zigs</a>
+		
+		<a href="https://lan.leagueoflegends.com/es-mx/champions/vayne/" target="_blank"><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg" height="150px"><br>Vayne</a>
+	</div>
+
+	<hr size="10px" color="white">
+	<div class="contenido">
+		<p >
+			Es un juego en equipo donde dos equipos (cada uno de 5 jugadores) se disponen a destruir el Nexo enemigo (Base Enemiga), pero este esta protejido por estructuras llamadas <strong>TORRETAS</strong> e <strong>Inividores</strong> además de unos ayudantes llamados <strong>SUBDITOS</strong> los cuales surgen regularmente para ayudarnos a derribar las estructuras y el nexo enemigo, pero también tienen una función muy importante la cual es que cada vez que nosotros eliminamos un subdito (propinandole el último golpe para que muera) recibmos una pequeña cantidad de Oro. <br>
+			El mapa principal esta constituido por 3 carriles (Superior o Top - central o Mid - inferior o Bot) y un espacio llamado jungla
+		</p>
+		<div class="mapas">
+			<div class="item1">
+				<img src="/images/Minions_Melee.jpg" width="300px" alt="Minions melé">
+			</div>
+			<div class="item2"><h2>Minions Cuerpo a cuerpo</h2>
+				Los minions cuerpo a cuerpo o tambien conocidos como minions melé, cada 30 segundos surgen del nexo enemigo 3 de estos minions junto con los minions mago
+			</div>
+			<div class="item1">
+				<img src="/images/Minions_Caster.jpg" width="300px" alt="Minions Caster">
+			</div>
+			<div class="item2"><h2>Minions Magos</h2>
+				Los minions magos se diferencian de los melé por que atacan a distancia, cada 30 segundos surgen del nexo enemigo 3 de estos minions junto con los minions melé
+			</div>
+			<div class="item1">
+				<img src="/images/Minions_Siege.jpg" width="300px" alt="Minions Canon">
+			</div>
+			<div class="item2"><h2>Minions Canon</h2>
+				Los minions canon atacan a distancia y son mas fuertes que los minions caster y los miniions melé, por ende dan mas oro al matarlos, salen cada minuto y medio hasta el minuto 15, luego empieza a surgir del nexo cada minuto, después del minuto 25 surgen cada 30 segundos.
+			</div>
+		</div>
+		<div class="mapas">
+			<div class="item1">
+				<img src="/images/Minions_Super.jpg" width="300px" alt="Super Minions">
+			</div>
+			<div class="item2"><h2>Super-Minions</h2>
+				Los super-minions son los subditos mas fuertes, pero estos son especiales puesto que se debe cumplir una condición para que estos surjan, la condición es que se debe destruir un inividor. Estos subditos empiezan a surgir cada 30 segundos mientras el inividor este destruido.
+			</div>
+			<div class="item1">
+				<img src="/images/torreta.png" width="300px" alt="Torreta">
+			</div>
+			<div class="item2"><h2>Torretas</h2>
+				las torretas son las encargadas de obstaculizar el paso para nuestra llegada al Nexo, son nuestro primer enemigo y debemos destruirlas para poder hacernos con el control del enemigo, estas estructuras como podemos ver tienen un rango de ataque si estamos por fuera de ese rango no podrá hacernos daño, si estamos dentro de su rango esta nos aacará a menos que tengamos Súbditos aliados acompañandonos ya que las torres solo pueden atacar a un enemigo a la vez es así que atacará a nuestros subditos y no a nosotros.
+				En total hay 11 torretas enemigas, tres en el carril superior, tres en el carril central, tres en el carril inferior y dos mas que protejen el nexo.
+			</div>
+			<div class="item1">
+				<img src="/images/inividor.jpg" width="300px" alt="inividor">
+			</div>
+			<div class="item2"><h2>Inividor</h2>
+				Los inividores son como mini nexos los cuales estan protejidos directamente por una torreta, cuando estos son destuidos comienzan a surgir Super-Minions del lado del equipo que lo destruye. solo hay 3 inividores uno en cada carril.
+			</div>
+		</div>
+		<div class="mapas">
+			<div class="item1">
+				<img src="/images/nexo.jpg" width="300px" alt="Nexo">
+			</div>
+			<div class="item2"><h2>Nexo</h2>
+				El nexo es el objetivo principal a destruir pero para llegar a este debemos destruir por lo menos 5 torretas (3 torretas de un mismo carril y las 2 torretas que protejen directamente el nexo) y un inividor para que este quede al descubierto y podamos destruirlo.
+			</div>
+			<div class="item1">
+				<img src="/images/dragones.jpg" width="300px" alt="Dragones">
+			</div>
+			<div class="item2"><h2>Dragones</h2>
+				Los dragones son un objetivo que sirve de ayuda para el equipo que los derrote, estas ayudas varian entre daño, defensa, regeneración de salud y maná o energía y reducción de enfriamento en nuestra habilidad definitiva.
+			</div>
+			<div class="item1">
+				<img src="/images/baron-nashor.jpg" width="300px" alt="Barón-Nashor">
+			</div>
+			<div class="item2"><h2>Barón-Nashor</h2>
+				El Barón-Nashor al igual que los dragones son una ayuda para nuestro equipo, pero a diferencia de los dragones el Barón-Nashor brinda poder tanto a campeones como a súbditos del equipo que logre matarlo.
+			</div>
+		</div>
+	</div>
+
+		
+	</div>
+	<hr size="10px" color="white">
+
+	<footer class="footer">
+		
+		 		<div class="iconos">
+			<a href="https://facebook.com" target="_blank">
+					<img src="/icon/facebook-f-brands.png " width="20px" alt="Facebook-Icon">
+			</a>
+			<a href="https://instagram.com" target="_blank">
+					<img src="/icon/instagram-brands.png " width="28px" alt="Instagram-Icon">
+			</a>
+			<a href="https://twitter.com " target="_blank">
+					<img src="/icon/twitter-brands.png " width="28px" alt="Twitter-Icon">
+			</a>
+		</div>
+		Copy<img src="/icon/copyright-regular.png " width="12px" alt="Copyright-Icon" >
+	</footer>
+
+
+
+
+	<!-- Bootstrap and JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

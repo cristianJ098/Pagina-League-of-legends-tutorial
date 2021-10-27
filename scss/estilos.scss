@@ -1,0 +1,278 @@
+$color_principal: #120314; //18, 3, 20
+
+
+.claseDiv{
+	color: tomato;
+}
+/* tipos de letras*/
+
+@font-face{
+	font-family: fuenteTitulo;
+	src: url(../font/Gorehand.otf);
+}
+@font-face {
+	font-family: fuenteSecundaria;
+	src: url(../font/Nuvel.ttf);
+}
+
+/* cabecera de la pagina*/
+
+body{
+	background-image: url("../images/background.jpg");
+	margin: 30px;
+	padding: 30px;
+    
+
+}
+
+.nav-link{
+    font-family: fuenteSecundaria;
+    font-size: 150%;
+}
+
+.cabeza{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.titulo{
+    font-family: fuenteTitulo;
+    color: rgba(255, 191, 0, 0.3);
+    background: rgba(0, 0, 0,0.8);
+    font-size: 500%;
+}
+.sub{
+    color: rgba(250, 225, 140,0.5) ;
+    font-family: fuenteTitulo;
+    text-align: center;
+    font-size: 30px;
+    background: rgba(0, 0, 0,0.8);
+}
+
+div{
+    a{
+        color:  #FFFFFF;
+        text-decoration: none;
+        transition: 0.4s;
+        font-family: sans-serif;
+    }
+    img{
+
+        transition: 0.3s;
+        }
+    
+
+
+}
+
+
+
+
+
+/*Página de league of legends*/
+#cine  {
+
+	text-align: right;
+	padding: 40px;
+	border-color: #4A4A4D 10px;
+	border-radius: 15px;
+	background: #120314  ;
+
+}
+
+
+/*contenido*/
+
+.contenido{
+        background-color: rgba(0, 0, 0,0.8);
+        color: white;
+        font-size: 1em;
+		width: 80%;
+		margin: 10px auto;
+	
+	p{
+		font-family: 'roboto', sans-serif;
+		font-size: 150% ;
+	}
+}
+
+/*Cinematicas*/
+
+iframe{
+
+	padding: 10px;
+
+}
+.videos{
+
+			display: flex;
+            flex-wrap: wrap;
+			justify-content: space-around;
+			background: rgba(12, 11, 9, 0.6);
+			border-radius: 30px;
+			margin: 20px auto;
+
+            iframe{
+
+                border-radius: 30px;
+                transition: 0.4s;
+            }
+
+            iframe:hover{
+
+                transform: scale(1.04);
+            }
+}
+
+
+/*Campeones tabla*/
+
+.tabla {
+	background-color: #ffffff;
+	width: 50%;
+	margin: 100px auto;
+}
+
+table{
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+	font-family: 'Playfair Display', serif;
+	font-size: large;
+	border-collapse: collapse;
+
+    thead{
+        background-color: rgb(17, 92, 110);
+        font: bold;
+        color: white;
+        border-bottom: #06262e solid 3px;
+        
+    }
+    th, td{
+        padding: 15px;
+    }
+
+}
+
+
+
+tr:nth-child(even){
+	background-color: #aee9fd;	
+}
+tr:hover{
+	background-color: #297c97
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(90, 91, 92, 0.5);
+    font-size: 200%;
+    color: black;
+    .iconos{
+        text-align: end;
+        padding: 5px;
+    }
+}
+
+/* sección mapas*/
+
+.mapas{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 4fr ;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    
+    .item1{
+        border: white solid 5px;
+        padding: 10px;
+        border-radius:  15px;
+
+    }
+    .item2 {
+        align-self: stretch;
+        background:rgba(0,0,0,0.7) ;
+        border: white solid 5px;
+        border-radius: 15px;
+        font-size: 200%;
+    }
+    
+
+
+    h2{
+        padding: 40px;
+        margin: 3px;
+        text-align: center;
+        color: rgba(207, 168, 10, 1.0) /*#CFA80A*/;
+        font-family: fuenteSecundaria;
+    }
+    p{
+        padding: 15px;
+        color: white;
+        font-family: 'roboto', sans-serif;
+    }
+}
+
+
+
+@media (max-width: 720px)  {
+    .videos{
+
+        background: rgba(146, 128, 93, 0.6);
+        margin: 20px auto;
+
+        iframe{
+
+            transition: 0.4s;
+        }
+
+        iframe:hover{
+
+            transform: scale(1.02);
+        }
+    }
+    
+}
+
+@media (max-width: 540px)  {
+    .mapas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 30px;
+        
+        .item1{
+            border: white solid 5px;
+            padding: 10px;
+            border-radius:  15px;
+    
+        }
+        .item2 {
+            align-self: stretch;
+            background:rgba(0,0,0,0.7) ;
+            border: white solid 5px;
+            border-radius: 15px;
+            font-size: 200%;
+        }
+        
+    
+    
+        h2{
+            padding: 40px;
+            margin: 3px;
+            text-align: center;
+            color: rgba(207, 168, 10, 1.0) /*#CFA80A*/;
+            font-family: fuenteSecundaria;
+        }
+        p{
+            padding: 15px;
+            color: white;
+            font-family: 'roboto', sans-serif;
+        }
+    }
+    
+}
