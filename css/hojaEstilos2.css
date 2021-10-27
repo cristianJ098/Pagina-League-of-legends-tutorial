@@ -186,3 +186,14 @@ tr:hover {
       padding: 15px;
       color: white;
       font-family: 'roboto', sans-serif; } }
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+    
+}
+
+.images img{
+  height: 150px;
+  }
