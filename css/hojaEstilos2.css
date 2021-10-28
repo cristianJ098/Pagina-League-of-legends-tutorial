@@ -187,13 +187,33 @@ tr:hover {
       color: white;
       font-family: 'roboto', sans-serif; } }
 
+
+/*Formato de imagenes */
 .images{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
+  width: 60%;
+  margin: 20px auto;
     
 }
 
+
 .images img{
   height: 150px;
-  }
+}
+
+.images a{
+  padding: 10px;
+  text-align: center;
+  font-size: 200%;
+  color: thistle;
+}
+.images a img{
+  padding: 0px;
+  border: 7px solid white;
+}
+
+.images a:hover{
+  transform: rotate(5deg);
+}
