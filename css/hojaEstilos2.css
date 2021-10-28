@@ -28,7 +28,7 @@ body {
 
 .titulo {
   font-family: fuenteTitulo;
-  color: rgba(255, 191, 0, 0.3);
+  color: rgba(245, 186, 8,0.8);
   background: rgba(0, 0, 0, 0.8);
   font-size: 500%; }
 
@@ -216,4 +216,14 @@ tr:hover {
 
 .images a:hover{
   transform: rotate(5deg);
+}
+
+.formulario{
+  background:rgba(0, 0, 0, 0.7);
+}
+
+/*formulario*/
+
+.form-inline{
+  background:rgba(0, 0, 0, 0.9);
 }
